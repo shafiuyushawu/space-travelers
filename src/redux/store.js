@@ -8,4 +8,5 @@ const store = configureStore({
     rockets: rocketReducer,
   },
 });
+
 export default store;
