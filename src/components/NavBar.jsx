@@ -6,7 +6,7 @@ const NavBar = () => (
     <nav>
       <a href="/">
         <img className="logo" src={logo} alt="" />
-        <h1 style={{ fontWeight: '300' }}>Space traveler&apos; Hub</h1>
+        <h1>Space traveler&apos; Hub</h1>
       </a>
       <ul>
         <Link className="nav-items" to="/rockets">Rockets</Link>
