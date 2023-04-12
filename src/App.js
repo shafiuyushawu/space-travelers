@@ -5,6 +5,7 @@ import Mission from './pages/Missions';
 import Profile from './pages/Profile';
 import NotFound from './pages/NotFound';
 import './styles/navbar.css';
+import './styles/rockets.css';
 
 function App() {
   return (
