@@ -4,9 +4,11 @@ import Button from 'react-bootstrap/Button';
 const Rocket = ({ rocket }) => (
   <div className="rocket">
     <img src={rocket.flickr_images[0]} alt={rocket.rocket_name} />
-    <h2>{rocket.rocket_name}</h2>
-    <p>{rocket.description}</p>
-    <Button variant="primary">Reserve Rocket</Button>
+    <div className="rocket-detail">
+      <h2>{rocket.rocket_name}</h2>
+      <p>{rocket.description}</p>
+      <Button variant="primary">Reserve Rocket</Button>
+    </div>
   </div>
 );
 
