@@ -20,7 +20,7 @@ const MissionList = ({ mission }) => {
       <td className="border p-2 w-36">
         <span className={
           mission.member
-            ? 'bg-info font-bold rounded-xl p-1 text-white'
+            ? 'bg-[#00e5ff] font-bold rounded-xl p-1 text-white'
             : 'bg-slate-500 font-bold rounded-xl p-1 text-white'
         }
         >
@@ -33,8 +33,8 @@ const MissionList = ({ mission }) => {
           type="button"
           className={
             mission.member
-              ? 'btn btn-outline rounded-none btn-secondary btn-sm'
-              : 'btn btn-outline rounded-none btn-slate-500 btn-sm'
+              ? '  border-2 border-[#ff0044] text-[#ff0044] font-bold p-1'
+              : 'border-2 border-[#adaaab] text-[#adaaab] font-bold p-1'
           }
         >
           {mission.member ? 'Leave Mission' : 'Join Mission'}
