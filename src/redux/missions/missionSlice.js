@@ -18,7 +18,7 @@ export const fetchMission = createAsyncThunk(
       const response = await client.get('missions');
       return response.data;
     } catch (error) {
-      return thunkAPI.rejectWithValue({ error: 'Something went wrong' });
+      return thunkAPI.rejectWithValue({ message: 'Something went wrong' });
     }
   },
 );
@@ -26,17 +26,31 @@ export const fetchMission = createAsyncThunk(
 const missionSlice = createSlice({
   name: 'missions',
   initialState,
+  reducers: {
+    missionStatus: (state, { payload: { missionId } }) => {
+      const newMissions = state.missions.map((mission) => {
+        if (mission.mission_id === missionId) {
+          return { ...mission, member: true };
+        }
+        return mission;
+      });
+      return { ...state, missions: newMissions };
+    },
+  },
   extraReducers: (builder) => {
     builder
-      .addCase(fetchMission.fulfilled, (state, action) => ({
-        ...state,
-        isLoading: false,
-        missions: action.payload,
-      }))
+      .addCase(fetchMission.fulfilled, (state, action) => {
+        const missions = action.payload.map((mission) => ({ ...mission, member: false }));
+        return {
+          ...state,
+          isLoading: false,
+          missions,
+        };
+      })
       .addCase(fetchMission.rejected, (state, action) => ({
         ...state,
         isLoading: false,
-        error: action.payload.error,
+        error: action.payload.message,
       }))
       .addCase(fetchMission.pending, (state) => ({
         ...state,
@@ -46,4 +60,5 @@ const missionSlice = createSlice({
   },
 });
 
+export const { missionStatus } = missionSlice.actions;
 export default missionSlice.reducer;
