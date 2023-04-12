@@ -6,11 +6,20 @@ import Loading from '../components/Loading';
 
 const Missions = () => {
   const dispatch = useDispatch();
-  const { missions, isLoading } = useSelector((state) => state.missions);
+  const { missions, isLoading, error } = useSelector((state) => state.missions);
 
   useEffect(() => {
     if (missions.length === 0) dispatch(fetchMission());
   }, [dispatch, missions.length]);
+
+  if (error) {
+    return (
+      <span>
+        Error:
+        {error}
+      </span>
+    );
+  }
 
   if (isLoading) {
     return (
