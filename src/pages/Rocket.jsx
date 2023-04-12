@@ -1,17 +1,13 @@
 import PropTypes from 'prop-types';
 import Button from 'react-bootstrap/Button';
 import { useDispatch } from 'react-redux';
+import { reserveRocket } from '../redux/rockets/rocketsSlice';
 
 const Rocket = ({ rocket }) => {
   const dispatch = useDispatch();
 
-  const reserveRocket = () => {
-    dispatch({
-      type: 'RESERVE_ROCKET',
-      payload: {
-        rocketId: rocket.id,
-      },
-    });
+  const handleReserverRocket = () => {
+    dispatch(reserveRocket(rocket.id));
   };
 
   return (
@@ -20,7 +16,7 @@ const Rocket = ({ rocket }) => {
       <div className="rocket-detail">
         <h2>{rocket.rocket_name}</h2>
         <p>{rocket.description}</p>
-        <Button variant="primary" onClick={reserveRocket}>Reserve Rocket</Button>
+        <Button variant="primary" onClick={handleReserverRocket}>Reserve Rocket</Button>
       </div>
     </div>
   );
