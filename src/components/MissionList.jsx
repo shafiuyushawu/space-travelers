@@ -4,9 +4,11 @@ import { missionStatus } from '../redux/missions/missionSlice';
 
 const MissionList = ({ mission }) => {
   const dispatch = useDispatch();
+
   const changeStatus = () => {
     dispatch(missionStatus({ missionId: mission.mission_id }));
   };
+
   return (
     <tr className="border">
       <th className="border  p-2">{mission.mission_name}</th>
@@ -16,12 +18,25 @@ const MissionList = ({ mission }) => {
         </p>
       </td>
       <td className="border p-2 w-36">
-        <span className="bg-slate-500 font-bold rounded-xl p-1 text-white">
-          Active Member
+        <span className={
+          mission.member
+            ? 'bg-info font-bold rounded-xl p-1 text-white'
+            : 'bg-slate-500 font-bold rounded-xl p-1 text-white'
+        }
+        >
+          {mission.member ? 'Active Member' : 'Not A Member'}
         </span>
       </td>
-      <td className="border p-2">
-        <button onClick={changeStatus} type="button" className="btn btn-outline rounded-none btn-slate-500 btn-sm">
+      <td className="border p-2  w-36">
+        <button
+          onClick={changeStatus}
+          type="button"
+          className={
+            mission.member
+              ? 'btn btn-outline rounded-none btn-secondary btn-sm'
+              : 'btn btn-outline rounded-none btn-slate-500 btn-sm'
+          }
+        >
           {mission.member ? 'Leave Mission' : 'Join Mission'}
         </button>
       </td>
