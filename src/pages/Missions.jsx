@@ -9,7 +9,7 @@ const Missions = () => {
 
   useEffect(() => {
     dispatch(fetchMission());
-  }, [dispatch]);
+  }, []);
 
   return (
     <section className=" px-10 py-5">
