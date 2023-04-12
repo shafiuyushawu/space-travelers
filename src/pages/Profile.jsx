@@ -24,9 +24,9 @@ const Profile = () => {
       </ul>
       <ul className="w-50">
         <h1>My Rockets</h1>
-        <li className="p-1 text-2xl border">Testar</li>
-        <li className="p-1 text-2xl border">Testar</li>
-        <li className="p-1 text-2xl border">Testar</li>
+        <li className="p-1 text-2xl border">Rockets</li>
+        <li className="p-1 text-2xl border">Rockets</li>
+        <li className="p-1 text-2xl border">Rockets</li>
       </ul>
     </div>
   );
