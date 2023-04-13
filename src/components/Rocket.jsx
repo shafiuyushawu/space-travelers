@@ -26,7 +26,7 @@ const Rocket = ({ rocket }) => {
         </p>
         {
           rocket.reserved
-            ? <Button variant="outline-secondary" onClick={handleReservation}>Reserve Rocket</Button>
+            ? <Button variant="outline-secondary" onClick={handleReservation}>Cancel reservation</Button>
             : <Button variant="primary" onClick={handleReservation}>Reserve Rocket</Button>
         }
       </div>
