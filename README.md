@@ -71,7 +71,7 @@ A single page web application that provides a platform for scientists to get boo
 <!-- LIVE DEMO -->
 ## 🚀 Live Demo <a name="live-demo"></a> 
 
-[Space Traveler's Hub](https://space-travellers-ztro.onrender.com/)
+[Space Traveler's Hub]()
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
@@ -91,7 +91,7 @@ To get the content of this project locally you need to run the following command
 
 1. Download the **Zip** file or clone the repo with:
 ```bash
-git clone https://github.com/maov19/space-travelers-hub/
+git clone https://github.com/shafiuyushawu/space-travelers
 ```
 2. To access cloned directory run:
 ```bash
@@ -173,7 +173,7 @@ Shafiu Ibn Yushawu
 
 Contributions, issues, and feature requests are welcome!
 
-[Kindly raise issue here](https://github.com/maov19/space-travelers-hub/issues)
+[Kindly raise issue here](https://github.com/shafiuyushawu/space-travelers/issues)
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
