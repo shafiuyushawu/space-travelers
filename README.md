@@ -71,7 +71,7 @@ A single page web application that provides a platform for scientists to get boo
 <!-- LIVE DEMO -->
 ## 🚀 Live Demo <a name="live-demo"></a> 
 
-[Space Traveler's Hub]()
+<!-- [Space Traveler's Hub]() -->
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
@@ -136,9 +136,9 @@ npx stylelint "\*_/_.{css,scss}"
 npx eslint .
 ```
 
-### Deployment
+<!-- ### Deployment -->
 
-[Space Traveler's Hub]()
+<!-- [Space Traveler's Hub]() -->
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
