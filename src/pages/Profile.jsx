@@ -3,7 +3,9 @@ import MissionProfile from '../components/MissionProfile';
 
 const Profile = () => {
   const missions = useSelector((state) => state.missions.missions);
+  const rockets = useSelector((state) => state.rockets.rockets);
 
+  const reservedRockets = rockets.filter((rocket) => rocket.reserved);
   const missionMembers = missions.filter((mission) => mission.member);
 
   return (
@@ -24,9 +26,13 @@ const Profile = () => {
       </ul>
       <ul className="w-50">
         <h1>My Rockets</h1>
-        <li className="p-1 text-2xl border">Rockets</li>
-        <li className="p-1 text-2xl border">Rockets</li>
-        <li className="p-1 text-2xl border">Rockets</li>
+        {
+          reservedRockets.map((rocket) => (
+            <li key={rocket.id} className="p-1 text-2xl border">
+              {rocket.rocket_name}
+            </li>
+          ))
+        }
       </ul>
     </div>
   );
