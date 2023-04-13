@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing mission components Generating the snapshots for missionlist 1`] = `
+<div>
+  <table>
+    <tbody
+      class="border"
+    >
+      <tr>
+        <th
+          class="border  p-2"
+        >
+          Test Mission
+        </th>
+        <td
+          class=" border p-2"
+        >
+          <p>
+            Test mission description
+          </p>
+        </td>
+        <td
+          class="border p-2 w-36"
+        >
+          <span
+            class="bg-[#00e5ff] font-bold rounded-xl p-1 text-white"
+          >
+            Active Member
+          </span>
+        </td>
+        <td
+          class="border p-2  w-36"
+        >
+          <button
+            class="  border-2 border-[#ff0044] text-[#ff0044] font-bold p-1"
+            type="button"
+          >
+            Leave Mission
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
