@@ -31,10 +31,10 @@ A single page web application that provides a platform for scientists to get boo
 ## 🛠 Built With <a name="built-with"></a> 
 
 ### Tech Stack <a name="tech-stack"></a>
-- React
-- Redux
-- Tailwind
-- Boostrap
+- (React)[https://react.dev]
+- (Redux)[https://react-redux.js.org]
+- Tailwind[https://tailwindcss.com/]
+- (React-Boostrap)[https://react-bootstrap.github.io/]
 
 ### Database <a name="data-base"></a>
 - API dependdencies
@@ -154,7 +154,7 @@ Shafiu Ibn Yushawu
 
 
 - GitHub: [@ZewdieMc](https://github.com/ZewdieMc)
-- Twitter: [@maov08](https://twitter.com/)
+- Twitter: [Zewdie](https://twitter.com/HabtieZewdie)
 
 <p align="right">(<a href="#table-contents">back to top</a>)</p>
 
