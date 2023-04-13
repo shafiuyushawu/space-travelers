@@ -32,7 +32,7 @@ const rocketSlice = createSlice({
         if (rocket.id !== action.payload) {
           return rocket;
         }
-        return { ...rocket, reserved: true };
+        return { ...rocket, reserved: !rocket.reserved };
       });
       return ({
         ...state,

@@ -6,7 +6,7 @@ import { reserveRocket } from '../redux/rockets/rocketsSlice';
 const Rocket = ({ rocket }) => {
   const dispatch = useDispatch();
 
-  const handleReserverRocket = () => {
+  const handleReservation = () => {
     dispatch(reserveRocket(rocket.id));
   };
 
@@ -16,7 +16,7 @@ const Rocket = ({ rocket }) => {
       <div className="rocket-detail">
         <h2>{rocket.rocket_name}</h2>
         <p>{rocket.description}</p>
-        <Button variant="primary" onClick={handleReserverRocket}>Reserve Rocket</Button>
+        <Button variant="primary" onClick={handleReservation}>Reserve Rocket</Button>
       </div>
     </div>
   );
