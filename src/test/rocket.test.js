@@ -1,4 +1,4 @@
-import { render, cleanup } from '@testing-library/react';
+import { render, cleanup, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import store from '../redux/store';
 import Rocket from '../components/Rocket';
@@ -18,6 +18,7 @@ describe('Testing rocket component', () => {
         <Rocket rocket={rocket} />
       </Provider>,
     );
+    screen.debug();
     expect(container).toMatchSnapshot();
   });
 });

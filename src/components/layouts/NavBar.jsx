@@ -13,15 +13,14 @@ const NavBar = () => {
         </Link>
         <ul>
           <NavLink
-            activeClassName={active === 'Rockets' ? 'active' : ''}
-            exact
+            className={active === 'Rockets' ? 'active' : ''}
             to="/"
             onClick={() => setActive('Rockets')}
           >
             Rockets
           </NavLink>
           <NavLink
-            activeClassName={active === 'Missions' ? 'active' : ''}
+            className={active === 'Missions' ? 'active' : ''}
             to="/missions"
             onClick={() => setActive('Missions')}
           >
@@ -29,7 +28,7 @@ const NavBar = () => {
           </NavLink>
           <span>|</span>
           <NavLink
-            activeClassName={active === 'Profile' ? 'active' : ''}
+            className={active === 'Profile' ? 'active' : ''}
             to="/profile"
             onClick={() => setActive('Profile')}
           >
