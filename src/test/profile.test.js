@@ -5,7 +5,7 @@ import MissionProfile from '../components/MissionProfile';
 
 afterEach(cleanup);
 
-describe('Testing profile component', () => {
+describe('Testing profile components', () => {
   test('Generating the snapshots for MissionProfile', () => {
     const member = {
       mission_name: 'Test Profile',

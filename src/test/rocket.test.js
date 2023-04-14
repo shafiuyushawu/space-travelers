@@ -4,7 +4,7 @@ import store from '../redux/store';
 import Rocket from '../components/Rocket';
 
 afterEach(cleanup);
-describe('Testing rocket components', () => {
+describe('Testing rocket component', () => {
   test('Generating the snapshots for rocket component', () => {
     const rocket = {
       id: '123',

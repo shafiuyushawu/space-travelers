@@ -1,15 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[` 1`] = `
-<div>
-  <li
-    class="p-1 text-2xl border"
-  >
-    Test Profile
-  </li>
-</div>
-`;
-
 exports[`Testing profile component Generating the snapshots for MissionProfile 1`] = `
 <div>
   <li
