@@ -21,7 +21,8 @@ const MissionList = ({ mission }) => {
             mission.member
               ? 'bg-[#00e5ff] font-bold rounded-xl p-1 text-white'
               : 'bg-slate-500 font-bold rounded-xl p-1 text-white'
-          }>
+          }
+        >
           {mission.member ? 'Active Member' : 'Not A Member'}
         </span>
       </td>
@@ -33,7 +34,8 @@ const MissionList = ({ mission }) => {
             mission.member
               ? '  border-2 border-[#ff0044] text-[#ff0044] font-bold p-1'
               : 'border-2 border-[#adaaab] text-[#adaaab] font-bold p-1'
-          }>
+          }
+        >
           {mission.member ? 'Leave Mission' : 'Join Mission'}
         </button>
       </td>
