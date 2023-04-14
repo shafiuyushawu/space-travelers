@@ -1,12 +1,13 @@
-import { render, cleanup } from '@testing-library/react';
+import { render, cleanup, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import store from '../redux/store';
 import MissionProfile from '../components/MissionProfile';
+import '@testing-library/jest-dom/extend-expect';
 
 afterEach(cleanup);
 
 describe('Testing profile components', () => {
-  test('Generating the snapshots for MissionProfile', () => {
+  it('Generating the snapshots for MissionProfile', () => {
     const member = {
       mission_name: 'Test Profile',
       member: true,
@@ -17,5 +18,8 @@ describe('Testing profile components', () => {
       </Provider>,
     );
     expect(container).toMatchSnapshot();
+
+    const missionName = screen.getByText('Test Profile');
+    expect(missionName).toBeInTheDocument();
   });
 });
