@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check if Missions page renders correctly 1`] = `
+<section
+  className="px-10 py-5 "
+  data-testid="mission-test"
+>
+  <table
+    className="w-full border"
+  >
+    <thead>
+      <tr
+        className="border"
+      >
+        <th
+          className="p-2 text-left border"
+        >
+          Mission
+        </th>
+        <th
+          className="p-2 text-left border"
+        >
+          Description
+        </th>
+        <th
+          className="p-2 text-left border"
+        >
+          Status
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>
+</section>
+`;

@@ -30,7 +30,7 @@ const Missions = () => {
   }
 
   return (
-    <section className="px-10 py-5 ">
+    <section className="px-10 py-5 " data-testid="mission-test">
       <table className="w-full border">
         <thead>
           <tr className="border">
