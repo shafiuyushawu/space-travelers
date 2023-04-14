@@ -40,7 +40,12 @@ const missionSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(fetchMission.fulfilled, (state, action) => {
-        const missions = action.payload.map((mission) => ({ ...mission, member: false }));
+        const missions = action.payload.map((mission) => ({
+          mission_id: mission.mission_id,
+          mission_name: mission.mission_name,
+          description: mission.description,
+          member: false,
+        }));
         return {
           ...state,
           isLoading: false,
