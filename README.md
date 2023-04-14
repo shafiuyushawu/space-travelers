@@ -152,7 +152,7 @@ Shafiu Ibn Yushawu
 - GitHub: [@shafiuyushawu](https://github.com/shafiuyushawu)
 - Twitter: [@shafiuyushawu](https://twitter.com/shafiuyushawu)
 
-
+Zewdie Habtie
 - GitHub: [@ZewdieMc](https://github.com/ZewdieMc)
 - Twitter: [Zewdie](https://twitter.com/HabtieZewdie)
 
