@@ -9,3 +9,13 @@ exports[`Testing profile component Generating the snapshots for MissionProfile 1
   </li>
 </div>
 `;
+
+exports[`Testing profile components Generating the snapshots for MissionProfile 1`] = `
+<div>
+  <li
+    class="p-1 text-2xl border"
+  >
+    Test Profile
+  </li>
+</div>
+`;
