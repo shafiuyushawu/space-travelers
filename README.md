@@ -70,6 +70,7 @@ A single page web application that provides a platform for scientists to get boo
 
 <!-- LIVE DEMO -->
 ## 🚀 Live Demo <a name="live-demo"></a> 
+ [🚀 Go Live](https://space-travelers-hub-kcp2.onrender.com)
 
 <!-- [Space Traveler's Hub]() -->
 
